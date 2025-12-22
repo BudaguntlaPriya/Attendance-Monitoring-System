@@ -29,7 +29,15 @@ This project is a real-time Interactive Attendance Dashboard designed to monitor
 <ul>
 <li>Access Swagger UI: Navigate to http://127.0.0.1:8000/docs to test the endpoints.</li>
 
-<li>PATCH Endpoint: /update_attendance/{roll_no}/{subject_name} - Used to update specific attendance counts in real-time.</li>
+<li>PATCH Endpoint: /update_attendance/{roll_no}/{subject_name} - Used to update specific attendance counts in real-time.</li></ul>
+<h3>6.System Architecture</h3>
+
+<ul>
+<li>Data Layer (MongoDB): Stores student records in a flexible NoSQL document format, allowing for easy data manipulation of 50+ records.</li>
+
+<li>Logic Layer (FastAPI): Acts as the bridge between the database and the UI. It implements RESTful CRUD operations with built-in error handling (e.g., 404 for missing records).</li>
+
+Presentation Layer (Dash & Plotly): A reactive frontend that polls the backend API every 2 seconds. It uses dcc.Interval to ensure the dashboard reflects database changes in real-time without a manual page refresh.</ul>
 
 
 
