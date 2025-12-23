@@ -37,7 +37,7 @@ This project is a real-time Interactive Attendance Dashboard designed to monitor
 
 <li>Logic Layer (FastAPI): Acts as the bridge between the database and the UI. It implements RESTful CRUD operations with built-in error handling (e.g., 404 for missing records).</li>
 
-Presentation Layer (Dash & Plotly): A reactive frontend that polls the backend API every 2 seconds. It uses dcc.Interval to ensure the dashboard reflects database changes in real-time without a manual page refresh.</ul>
+<li>Presentation Layer (Dash & Plotly): A reactive frontend that polls the backend API every 2 seconds. It uses dcc.Interval to ensure the dashboard reflects database changes in real-time without a manual page refresh.</li></ul>
 
 
 
